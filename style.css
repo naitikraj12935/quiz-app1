@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background:linear-gradient(orange,pink);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+    text-transform: uppercase;
+    color:blueviolet;
+}
+.container
+{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap:0.5rem;
+    padding: 0px 7px;
+    background-color: bisque;
+    width: 60%;
+    height: 60vh;
+    border-radius: 20px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+   
+}
+#sub{
+    display: none;
+}
+.container:hover{
+    box-shadow: 2px 2px 2px 2px slategray;
+    cursor: pointer;
+}
+.quizcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+button{
+    background-color: pink;
+    border-radius: 7px;
+    padding: 3px 7px;
+    width: 100px;
+    height: 40px;
+   
+   
+
+}
+button:hover{
+   cursor: pointer; 
+}
+button:active{
+    scale: 1.1;
+}
+.output{
+    height: 50vh;
+    width: 50vw;
+    background-color: white;
+    position: absolute;
+    left: 5vw;
+    top: 6vh;
+    padding: 70px 3px;
+    display: none;
+    border-radius: 100px;
+}
+.output1{
+    height: 50vh;
+    width: 50vw;
+    background-color: white;
+   
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+   
+    
+   
+    
+}
+
+
+
+  
+@media screen and (max-width:452px) {
+    .container{
+        height: 70vh;
+        width: 70vw;
+    }
+    .output{
+        height: 50vh;
+        width: 60vw;
+    }
+    
+}
